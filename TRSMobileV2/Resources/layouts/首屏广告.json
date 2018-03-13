@@ -1,0 +1,10 @@
+{
+	"code" : 0,
+	"message" : "获取首屏广告成功",
+
+	"response" : {
+		"expiredDate" : 1546228800,
+		"media" : "http://img.sj33.cn/uploads/allimg/201608/09355430J-20.jpg",
+		"url" : "http://www.baidu.com"
+	}	
+}
