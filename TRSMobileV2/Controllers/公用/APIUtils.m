@@ -2,8 +2,8 @@
 //  APIUtils.m
 //  TRSMobileV2
 //
-//  Created by  TRS on 2017/3/6.
-//  Copyright © 2017年 trs. All rights reserved.
+//  Created by 廖靖宇 on 2016/12/31.
+//  Copyright © 2016年  liaojingyu. All rights reserved.
 //
 
 #import "APIUtils.h"

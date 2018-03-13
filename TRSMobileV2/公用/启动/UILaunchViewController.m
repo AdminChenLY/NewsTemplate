@@ -2,8 +2,8 @@
 //  UISplashViewController.m
 //  TRSMobileV2
 //
-//  Created by  TRS on 16/3/31.
-//  Copyright © 2016年  TRS. All rights reserved.
+//  Created by 廖靖宇 on 2016/3/31.
+//  Copyright © 2016年  liaojingyu. All rights reserved.
 //
 
 #import <AVFoundation/AVFoundation.h>
@@ -218,7 +218,8 @@ static NSString *const kUILaunchMediaKey = @"launchMedia";
             }
         }
         else {
-            [self loadAppAdImage:NO path:nil];
+               [self loadAppAdImage:YES path:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=697563148,4247827459&fm=27&gp=0.jpg"];
+//            [self loadAppAdImage:NO path:nil];
         }
     }
     
@@ -287,13 +288,15 @@ static NSString *const kUILaunchMediaKey = @"launchMedia";
 - (void)loadAppAdVideo:(NSURL *)url {
 
     //底部应用标识
-    UIImageView *splash = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    splash.backgroundColor = [UIColor whiteColor];
-    splash.image = [UIImage imageNamed:launchImage()];
-    [pageScrollView addSubview:splash];
+//    UIImageView *splash = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    splash.backgroundColor = [UIColor whiteColor];
+//    splash.image = [UIImage imageNamed:launchImage()];
+//    [pageScrollView addSubview:splash];
 
     //视频广告
-    self.player = [AVPlayer playerWithURL:url];
+    NSString *moviePath = [[NSBundle mainBundle] pathForResource:@"keep" ofType:@"mp4"];
+//    self.moviePlayerController.contentURL = [[NSURL alloc] initFileURLWithPath:moviePath];
+    self.player = [AVPlayer playerWithURL:[[NSURL alloc] initFileURLWithPath:moviePath]];
     self.duration = CMTimeGetSeconds(self.player.currentItem.asset.duration); //视频广告的播放时长
     AVPlayerLayer *playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
     playerLayer.backgroundColor = [UIColor blackColor].CGColor;
@@ -333,7 +336,8 @@ static NSString *const kUILaunchMediaKey = @"launchMedia";
             self.duration = 5.0; //图片广告的播放时长
             
             imageView = [[UIImageView alloc] init];
-            [imageView sd_setImageWithURL:[NSURL fileURLWithPath:path] ];
+//            [imageView sd_setImageWithURL:[NSURL fileURLWithPath:path] ];
+             [imageView sd_setImageWithURL:[NSURL fileURLWithPath:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=697563148,4247827459&fm=27&gp=0.jpg"]];
         }
         
         imageView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - _sizeLogo.height);

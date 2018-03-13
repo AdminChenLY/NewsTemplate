@@ -397,6 +397,7 @@
 		A6EBE3831F68DFA3002B2713 /* YYBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EBE37D1F68DFA3002B2713 /* YYBannerModel.m */; };
 		A6EBE3841F68DFA3002B2713 /* YYBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EBE37F1F68DFA3002B2713 /* YYBannerView.m */; };
 		A6EBE3851F68DFA3002B2713 /* YYRollBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6EBE3811F68DFA3002B2713 /* YYRollBarView.m */; };
+		B226006920578B52004CB825 /* 首页.json in Resources */ = {isa = PBXBuildFile; fileRef = B226006820578B52004CB825 /* 首页.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1165,6 +1166,8 @@
 		A6EBE37F1F68DFA3002B2713 /* YYBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYBannerView.m; sourceTree = "<group>"; };
 		A6EBE3801F68DFA3002B2713 /* YYRollBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRollBarView.h; sourceTree = "<group>"; };
 		A6EBE3811F68DFA3002B2713 /* YYRollBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRollBarView.m; sourceTree = "<group>"; };
+		B226006820578B52004CB825 /* 首页.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "首页.json"; sourceTree = "<group>"; };
+		B226006A20579081004CB825 /* keep.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = keep.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1397,6 +1400,8 @@
 		793DB18B1C91086F0004CF6E /* layouts */ = {
 			isa = PBXGroup;
 			children = (
+				B226006A20579081004CB825 /* keep.mp4 */,
+				B226006820578B52004CB825 /* 首页.json */,
 				79827E661CB61CFA00524F39 /* 应用框架.json */,
 				79F0EA721CAE6952003616E5 /* 首屏广告.json */,
 				795CF8F31CC8B1FC00C69C1F /* 新闻栏目.json */,
@@ -2957,9 +2962,9 @@
 				TargetAttributes = {
 					794F1C431C8D2B16001B2194 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 9A59CDXZH8;
+						DevelopmentTeam = 3JVFK7B32L;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -2980,8 +2985,8 @@
 					};
 					79FB25A81E5EBBDF007F8A84 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9A59CDXZH8;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 3JVFK7B32L;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -3054,6 +3059,7 @@
 				790CE2A81D13EF0A003F1787 /* website.plist in Resources */,
 				790C7F711D0809EB0058C248 /* UILoginViewController.xib in Resources */,
 				7938BBC91D3752F3005F5F84 /* XLVideoPlayer.bundle in Resources */,
+				B226006920578B52004CB825 /* 首页.json in Resources */,
 				793DAE9A1C900F100004CF6E /* Vendor.plist in Resources */,
 				7938BBD71D388632005F5F84 /* TRSMobileV2.entitlements in Resources */,
 				793DB0F01C902B0F0004CF6E /* Assets.xcassets in Resources */,
@@ -3550,8 +3556,9 @@
 				CODE_SIGN_ENTITLEMENTS = TRSMobileV2/TRSMobileV2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: cao hui (QMRX4E827L)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9A59CDXZH8;
+				DEVELOPMENT_TEAM = 3JVFK7B32L;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3587,10 +3594,10 @@
 					"$(PROJECT_DIR)/TRSMobileV2/Vendor/ShareSDK-iOS-simple-v4.0.4/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c99bd8b1-6263-4484-849e-3d91ca1ff090";
-				PROVISIONING_PROFILE_SPECIFIER = "ChengDu TRS Mobile Template Provision Dev";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USE_HEADERMAP = YES;
@@ -3606,8 +3613,9 @@
 				CODE_SIGN_ENTITLEMENTS = TRSMobileV2/TRSMobileV2.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9A59CDXZH8;
+				DEVELOPMENT_TEAM = 3JVFK7B32L;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3643,10 +3651,10 @@
 					"$(PROJECT_DIR)/TRSMobileV2/Vendor/ShareSDK-iOS-simple-v4.0.4/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c99bd8b1-6263-4484-849e-3d91ca1ff090";
-				PROVISIONING_PROFILE_SPECIFIER = "ChengDu TRS Mobile Template Provision Dev";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USE_HEADERMAP = YES;
@@ -3661,15 +3669,16 @@
 				CODE_SIGN_ENTITLEMENTS = TRSMobileV2Today/TRSMobileV2Today.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9A59CDXZH8;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JVFK7B32L;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TRSMobileV2Today/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile1.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3f400e15-0e7b-4286-aee3-f28d931881d0";
-				PROVISIONING_PROFILE_SPECIFIER = "TRS Mobile Wildcard GL Provision";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -3682,15 +3691,16 @@
 				CODE_SIGN_ENTITLEMENTS = TRSMobileV2Today/TRSMobileV2Today.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9A59CDXZH8;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JVFK7B32L;
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TRSMobileV2Today/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile.TodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trs.TRSMobile1.TodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3f400e15-0e7b-4286-aee3-f28d931881d0";
-				PROVISIONING_PROFILE_SPECIFIER = "TRS Mobile Wildcard GL Provision";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -3705,7 +3715,7 @@
 				794F1C5A1C8D2B16001B2194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		794F1C5B1C8D2B16001B2194 /* Build configuration list for PBXNativeTarget "TRSMobileV2" */ = {
 			isa = XCConfigurationList;
@@ -3714,7 +3724,7 @@
 				794F1C5D1C8D2B16001B2194 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		79FB25B61E5EBBDF007F8A84 /* Build configuration list for PBXNativeTarget "TRSMobileV2Today" */ = {
 			isa = XCConfigurationList;
@@ -3723,7 +3733,7 @@
 				79FB25B81E5EBBDF007F8A84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

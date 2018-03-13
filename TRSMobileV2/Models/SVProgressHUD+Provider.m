@@ -2,8 +2,8 @@
 //  SVProgressHUD+Provider.m
 //  TRSMobileV2
 //
-//  Created by  TRS on 16/6/15.
-//  Copyright © 2016年  TRS. All rights reserved.
+//  Created by  廖靖宇 on 16/3/11.
+//  Copyright © 2016年  liaojingyu. All rights reserved.
 //
 
 #import "SVProgressHUD+Provider.h"

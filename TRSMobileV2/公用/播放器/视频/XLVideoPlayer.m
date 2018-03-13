@@ -84,8 +84,8 @@ static CGFloat const playBtnSideLength = 60.0f;
 }
 
 - (void)setVideoUrl:(NSString *)videoUrl {
-    _videoUrl = videoUrl;
-    
+   
+        _videoUrl = videoUrl;
     [self.layer addSublayer:self.playerLayer];
     [self insertSubview:self.activityIndicatorView belowSubview:self.playOrPauseBtn];
     [self.activityIndicatorView startAnimating];

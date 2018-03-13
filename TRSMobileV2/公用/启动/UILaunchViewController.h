@@ -2,15 +2,15 @@
 //  UISplashViewController.h
 //  TRSMobileV2
 //
-//  Created by  TRS on 16/3/31.
-//  Copyright © 2016年  TRS. All rights reserved.
+//  Created by 廖靖宇 on 2016/3/31.
+//  Copyright © 2016年  liaojingyu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 
 /*广告接口API*/
-#define kLaunchAPIUrl       @"file://首屏广告.json"
+#define kLaunchAPIUrl       @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1520925966765&di=3d3039d3462fe1f00f532455a948eea9&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201408%2F12%2F20140812132117_fvJsY.jpeg"
 
 /*外层封装字段*/
 #define kLaunchResponse     @"response"
@@ -19,7 +19,7 @@
 #define kLaunchExpireDate   @"expiredDate"
 
 /*广告加载地址*/
-#define kLaunchMedia        @"media"
+#define kLaunchMedia        @"keep.mp4"
 
 /*广告链接地址*/
 #define kLaunchUrl          @"url"

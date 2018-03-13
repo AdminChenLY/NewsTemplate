@@ -2,8 +2,8 @@
 //  UIViewController+Block.m
 //  TRSMobileV2
 //
-//  Created by  TRS on 16/5/5.
-//  Copyright © 2016年  TRS. All rights reserved.
+//  Created by 廖靖宇 on 2016/12/31.
+//  Copyright © 2016年  liaojingyu. All rights reserved.
 //
 
 #import "UIViewController+Extension.h"

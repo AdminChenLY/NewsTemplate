@@ -2,8 +2,8 @@
 //  TodayCell.m
 //  TRSMobileV2
 //
-//  Created by  TRS on 2017/6/13.
-//  Copyright © 2017年 trs. All rights reserved.
+//  Created by 廖靖宇 on 2017/6/17.
+//  Copyright © 2017年  liaojingyu. All rights reserved.
 //
 
 #import "TodayCell.h"
